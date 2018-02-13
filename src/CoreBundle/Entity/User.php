@@ -77,37 +77,36 @@ class User
         return $this->id;
     }
 
-    /**
-     * Set topic
-     *
-     * @param string $topic
-     *
-     * @return Topics
-     */
-    public function setTopic($topic)
+    public function getEmail()
     {
-        $this->topic = $topic;
-
-        return $this;
+        return $this->email;
     }
 
-    /**
-     * Get title
-     *
-     * @return string
-     */
-    public function getTopic()
+    public function setEmail($email)
     {
-        return $this->title;
+        $this->email = $email;
+    }
+
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    public function setUsername($username)
+    {
+        $this->username = $username;
+    }
+
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    public function setPassword($password)
+    {
+        $this->password = $password;
     }
     
-    /**
-     * Set news
-     *
-     * @param string $news
-     *
-     * @return News
-     */
     public function addNews(News $news)
     {
         $this->news[] = $news;

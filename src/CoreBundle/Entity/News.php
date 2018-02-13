@@ -74,14 +74,6 @@ class News
     private $body;
 
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date_posted", type="datetime")
-     * @Assert\NotBlank()
-     */
-    private $datePosted;
-
-    /**
      * @var \DateTime|null
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(type="datetime")
@@ -296,22 +288,6 @@ class News
         $this->image = $image;
 
         return $this;
-    }
-    
-    /**
-     * @return \DateTime
-     */
-    public function getDatePosted()
-    {
-        return $this->datePosted;
-    }
-
-    /**
-     * @param \DateTime $datePosted
-     */
-    public function setDatePosted($datePosted)
-    {
-        $this->datePosted = $datePosted;
     }
 }
 
