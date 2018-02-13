@@ -1,0 +1,14 @@
+/app/config/parameters.yml
+/build/
+/phpunit.xml
+/vendor/
+/var/*
+
+
+.idea/
+.DS_Store
+composer.lock
+/web/config.php
+capistrano.log
+*.rdb
+
